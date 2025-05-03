@@ -70,15 +70,15 @@ div.rating-button {
   justify-content: center;
   align-items: center;
   cursor: pointer;
- 
+  margin-bottom: 10px;
 } 
 
  div.rating-button:hover{
-  background-color : aliceblue;
+  background-color : hsl(25, 97%, 53%);
   color:hsl(24, 5%, 21%) ;
  }
  div.rating-button:active{
-  background-color: hsl(25, 97%, 53%);
+  background-color: aliceblue;
  }
 
   button{
@@ -95,7 +95,7 @@ div.rating-button {
 
 button:hover{
 background-color: aliceblue;
-color:hsl(25, 97%, 53%) ;
+
 }
 
 .thank-you-image{
