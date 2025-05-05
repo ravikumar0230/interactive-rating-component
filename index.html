@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+  <h2>Dark mode toggle</h2>
   <main>
 
     <div class="container">
@@ -28,19 +28,17 @@
       <p>
         Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
       </p>
-    <form action="thank-you.html" method="get">
-      <div class="rating">
-
-        <div class="rating-button" onclick="myfunction()">1</div>
-        <div class="rating-button" onclick="myfunction()">2</div>
-        <div class="rating-button" onclick="myfunction()">3</div>
-        <div class="rating-button" onclick="myfunction()">4</div>
-        <div class="rating-button" onclick="myfunction()">5</div>
-
-      </div>
-
-      <button>submit</button>
-    </form>
+      <form action="thank-you.html" method="get" onsubmit="return validateForm()">
+        <input type="hidden" name="rating" id="ratingInput">
+        <div class="rating">
+          <div class="rating-button" onclick="selectRating(1)">1</div>
+          <div class="rating-button" onclick="selectRating(2)">2</div>
+          <div class="rating-button" onclick="selectRating(3)">3</div>
+          <div class="rating-button" onclick="selectRating(4)">4</div>
+          <div class="rating-button" onclick="selectRating(5)">5</div>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
     </div>
     
   </main>
