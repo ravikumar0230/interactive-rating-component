@@ -1,19 +1,3 @@
-// const form = document.querySelector("[data-js-form]");
-// const template = document.querySelector("[data-js-template]");
-// const wrapper = document.querySelector("[data-js-wrapper]");
-
-// function handleSubmit(event){
-// event.preventDefault();
-
-// const rating = new FormData(event.target).get("rating");
-// const ratingValue = document.getElementById("rating");
-// console.log(ratingValue, rating)
-// if(rating){
-//     ratingValue.textContent = rating;
-// }
-// }
-
-// form.addEventListener("submit",handleSubmit);
 
 const ratingBtns = document.querySelectorAll(".rating-button");
 let selectedRating = null;
